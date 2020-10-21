@@ -1,0 +1,54 @@
+.box {
+    color: pink;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    box-sizing: border-box;
+    margin: 5px;
+    display: block;
+    position: relative;
+}
+
+.box-container {
+    width: 50%;
+    height: 500px;
+    display: inline-block;
+}
+
+.button-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.link-text {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: flat;
+    display: flex;
+    font-size: 28px;
+    font-family: "biko";
+}
+
+.box:hover .button-image {
+    transition-duration: 0.3s;
+    filter: brightness(50%);
+}
+
+.box .button-image {
+    filter: brightness(100%);
+    transition: filter 0.3s ease-out;
+}
+
+.box h2 {
+    opacity: 0%;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: opacity 0.3s ease-out;
+}
+
+.box:hover h2 {
+    opacity: 100%;
+    backface-visibility: hidden;
+}

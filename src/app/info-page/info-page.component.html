@@ -1,0 +1,21 @@
+<div class=header-section>
+    <div>
+      <h1 class="title-text">
+          {{info.title}}
+      </h1>
+    
+      <h2 class="paragraph-text">
+          {{info.description}}
+      </h2>
+    </div>
+
+    <img class="title-image" [src]="info.titleImage">
+</div>
+
+<div class="boxbox">
+    <div class="box-container" *ngFor="let image of info.allImage">
+        <div class="box">
+            <img class="button-image" [src]="image">
+      </div>
+    </div>
+</div>
