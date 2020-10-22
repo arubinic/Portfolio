@@ -49,6 +49,6 @@
 }
 
 .box:hover h2 {
-    opacity: 100%;
+    opacity: 1;
     backface-visibility: hidden;
 }
